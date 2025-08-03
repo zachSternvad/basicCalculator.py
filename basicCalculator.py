@@ -1,6 +1,16 @@
-number1 = int(input("Enter your first number: "))
+try:
+    number1 = int(input("Enter your first number: "))
+except ValueError:
+    print("\033[91mEnter a valid number\033[0m")
+    exit()
+
 operator = input("Select your operator(+, -, *, /): ")
-number2 = int(input("Enter your second number: "))
+
+try:
+    number2 = int(input("Enter your second number: "))
+except ValueError:
+    print("\033[91mEnter a valid number\033[0m")
+    exit()
 
 
 if operator == "+":
@@ -20,4 +30,4 @@ elif operator == "/":
     print(f"Result: {result}")
 
 else:
-    print("Enter valid operator")
+    print("\033[91mEnter valid operator\033[0m")
