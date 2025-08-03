@@ -8,10 +8,16 @@ if operator == "+":
     print(f"Result: {result}")
 
 elif operator == "-":
-    print(f"Result: {number1} - {number2}")
+    result = (number1 - number2)
+    print(f"Result: {result}")
+
 elif operator == "*":
-    print(f"Result: {number1} * {number2}")
+    result = (number1 * number2)
+    print(f"Result: {result}")
+
 elif operator == "/":
-    print(f"Result: {number1} / {number2}")
+    result = (number1 / number2)
+    print(f"Result: {result}")
+
 else:
     print("Enter valid operator")
